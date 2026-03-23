@@ -109,6 +109,7 @@ body {
   text-align: end;
   padding: 10px 50px;
   border-radius: 40px;
+  font-weight: 800;
   background-image: linear-gradient(rgb(81, 81, 81), rgb(29, 29, 29));
   margin-bottom: 30px;
   position: relative;
@@ -135,6 +136,11 @@ body {
 .inner__logo::after {
   animation: fly-high 0.3s infinite alternate ease-in-out;
 }
+@media (max-width: 320px) {
+  .inner__logo {
+    font-size: 20px;
+  }
+}
 .inner__title {
   font-size: 46px;
   font-family: "Montserrat";
@@ -145,9 +151,19 @@ body {
     font-size: 36px;
   }
 }
+@media (max-width: 320px) {
+  .inner__title {
+    font-size: 20px;
+  }
+}
 .inner__desc {
   font-size: 22px;
   color: rgb(81, 81, 81);
+}
+@media (max-width: 320px) {
+  .inner__desc {
+    font-size: 14px;
+  }
 }
 
 .bg {

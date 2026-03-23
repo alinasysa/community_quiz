@@ -135,6 +135,7 @@ body {
     text-align: end;
     padding: 10px 50px;
     border-radius: 40px;
+    font-weight: 800;
     background-image: linear-gradient(rgba(81, 81, 81, 1), rgba(29, 29, 29, 1));
     margin-bottom: 30px;
     position: relative;
@@ -150,6 +151,9 @@ body {
       background-size: contain;
       @include rocket-animation("fly-high", 5px, 0.3s);
     }
+    @media (max-width: 320px) {
+      font-size: 20px;
+    }
   }
   &__title {
     @include fz-bold;
@@ -157,10 +161,16 @@ body {
     @media (max-width: 768px) {
       font-size: 36px;
     }
+    @media (max-width: 320px) {
+      font-size: 20px;
+    }
   }
   &__desc {
     font-size: 22px;
     color: rgba(81, 81, 81, 1);
+    @media (max-width: 320px) {
+      font-size: 14px;
+    }
   }
 }
 .bg {
